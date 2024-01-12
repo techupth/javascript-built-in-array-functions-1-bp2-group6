@@ -7,18 +7,8 @@ const todos = [
 ];
 
 function getTodoTopics(todos) {
-  // Start coding here
+ return todos.map(todos => todos.topic)
 }
 
-getTodoTopics(todos);
-
-/* 
-	Output:
-	[
-		'Doing pre-work',
-		'Workout',
-		'Playing computer games',
-		'Relax',
-		'Clean the room'
-	]
-*/
+let results = getTodoTopics(todos);
+console.log(results)
